@@ -42,6 +42,13 @@ function search(query){
 	    query.replaceChars("", "+");
 	    break;
 
+	case "-g":
+        query=query.substr(3);
+        window.location = 
+        "https://terraria.gamepedia.com/index.php?search=" + 
+        query.replaceChars("", "+");
+        break;
+
         default:
             window.location="https://duckduckgo.com/?q=" +
                 query.replaceChars("", "+");
