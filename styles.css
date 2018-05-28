@@ -1,0 +1,157 @@
+body {
+    background-color: #121c21;
+	color: #aaafb2;
+	text-shadow: rgba(0,0,0,0.6) 1px 1px 0;
+	font-family: "SF Pro Text";
+	font-size: 11px;
+	font-weight: bold;
+    text-align: center;
+}
+
+.content {
+    margin-top: 20%;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+}
+
+.welcome {
+    border: 0px solid red;
+    font-family: "SF Pro Display";
+    font-size: 23px;
+    text-align: right;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 3px solid #1e2e36;
+    position: relative;
+}
+
+.shinji {
+    width: 200px;
+    height: auto;
+    border: 0px solid red;
+    position: absolute;
+    bottom: 0;
+}
+
+.nav {
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+    border: 0px solid red;
+    margin: auto;
+    text-align: center;
+    z-index: 5;
+}
+
+#message {
+    display: inline-block;
+    border: 0px solid red;
+}
+
+.nav .buttons {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 80px;
+    border-bottom: 1px solid transparent;      
+}
+
+.nav .buttons a {
+    display: block;
+    padding-top: 10px;
+    text-decoration: none;
+    text-align: right;
+    width: 80px;
+}
+
+.nav .buttons {
+	border-bottom: 3px solid transparent;
+    transition: .1s; 
+}
+
+.nav .buttons:hover {
+    border-bottom: 3px solid #ef686e;
+}
+
+.nav .buttons:hover > p {
+    color: #ef686e; 
+}
+
+.nav .buttons .dropdown {
+    display: none;
+    z-index: 999;
+    margin-left: -81px;
+}
+
+.nav .dropdown {
+    display: block;
+    position: fixed;
+    display: none;
+    padding-top: 10px;
+}
+
+.nav .dropdown li {
+    display: block;
+}
+
+.nav .dropdown a {
+	white-space: nowrap;
+}
+
+.nav li:hover .dropdown {
+	display: inherit;
+    border-bottom: none !important;   
+}
+
+.nav li:hover a {
+	background-color:inherit;
+	text-decoration: underline;  
+}
+
+.nav li:hover .dropdown a {
+    text-decoration: none;
+}
+
+.nav li:hover .dropdown li a:hover {
+    color: #ef686e; 
+}
+
+a, a:link, a:visited { 
+	color: #aaafb2;
+	transition: .2s ease-out; 
+}
+
+p {
+	font-family: "Font Awesome 5 Free Solid";
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.yellow {
+    color: #f7cca1;
+}
+
+.blue {
+    color: #718c97;
+}
+
+.green {
+    color: #76a08c;
+}
+
+.magenta {
+    color: #ceb5ce;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.eva {
+    border: 0px solid red;
+    width: 300;
+    height: auto;
+    bottom: 0%;
+    right: 0%;
+    position: fixed;
+}
