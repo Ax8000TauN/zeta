@@ -1,7 +1,6 @@
 body {
     background-color: #121c21;
 	color: #aaafb2;
-	text-shadow: rgba(0,0,0,0.6) 1px 1px 0;
 	font-family: "SF Pro Text";
 	font-size: 11px;
 	font-weight: bold;
@@ -27,6 +26,23 @@ a {
     border-bottom: 3px solid #1e2e36;
     position: relative;
     text-transform: lowercase;
+}
+
+#info {
+    font-size: 11px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(1em);
+    z-index: 0;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.welcome:hover > #info {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
 }
 
 #date {
@@ -173,6 +189,15 @@ img {
     position: fixed;
 }
 
+#prompt {
+    border: 0px solid red;
+    line-height: 40px;
+    width: 10px;
+    height: 40px;
+    margin-left: 10px;
+    text-shadow: none;
+}
+
 .bar {
     border: 0px solid red;
     bottom: 0;
@@ -193,10 +218,51 @@ input {
     border: 0px solid red;
 }
 
-.prompt {
+
+#help {
     border: 0px solid red;
     line-height: 40px;
     width: 10px;
     height: 40px;
-    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#help:hover, #help:focus {
+    color: #ef686e;
+    cursor: pointer;
+}
+
+#help:hover ~ #helpbox {
+    visibility: visible;
+    z-index: 3;
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+#helpbox {
+    background: #1e2e36;
+    border-radius: 4px;
+    text-shadow: none;
+    border: 0px solid red;
+    bottom: 6%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    right: 1%;
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(2em);
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    padding: 5px 15px 15px 15px;
+}
+
+h1 {
+    border-bottom: 2px solid #ef686e;
+    color: #ef686e;
+    font-weight: bold;
+    font-size: 13px;
+    padding-bottom: 4px;
+    text-shadow: none;
 }
