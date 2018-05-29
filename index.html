@@ -11,6 +11,7 @@
 		<div class="welcome">
 			<div class="shinji"><img src="shinji.png"></div>
 			<div id="message"></div>
+			<div id="date"></div>
 		</div>
 		<script src="index.js"></script>
 		<ul class="nav">    
@@ -63,10 +64,21 @@
 	</div>
 	<div class="bar">
 		<div class="prompt">$</div>
-		<input id="searchbox" name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100" placeholder="search -l -w -y -t -g"
+		<input id="searchbox" name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100" placeholder="search -l -w -y -t"
 		    size="17" autofocus="autofocus" />
 	</div>
 	<script src="search.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+	      	function updateDate() {
+		      	var m = new Date(); 
+		      	var n = "en-us"
+		      	var date = ("0" + m.getDate()).slice(-2) + " " + m.toLocaleString(n, {month: "long"});
+		        document.getElementById('date').innerHTML = date;
+	    	}
+	       updateDate();
+		});
+	        </script>
 	<!--<div class="eva"><img src="01.png"></div>-->
 </body>
 </html>
