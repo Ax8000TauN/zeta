@@ -1,9 +1,9 @@
-﻿function changeBg() {
+﻿function changeTx() {
   const n = new Date().getHours();
   const styles = {
     message: '',
   };
-  if (n >= 24 && n <= 12) {
+  if (n >= 0 && n <= 12) {
     styles.message = 'Morning';
   } else if (n >= 12 && n <= 18) {
     styles.message = 'Afternoon!';
@@ -13,4 +13,4 @@
   document.querySelector('#message').innerHTML = styles.message;
 }
 
-changeBg();
+changeTx();
