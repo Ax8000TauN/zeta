@@ -36,20 +36,20 @@ function search(query){
 	    	break;
 
     	case "-l":
-	    	query=query.substr(3);
+			query=query.substr(3);
 			window.location = 
     	    "https://" + 
     	    query.replaceChars("", "+");
     	    break;
 
-        case "-sr":
+        case "-s":
 			query=query.substr(3);
 			window.location = 
             "https://www.reddit.com/search?q=" + 
             query.replaceChars("", "+");
             break;
 
-        case "-R":
+        case "-r":
 			query=query.substr(3);
 			window.location = 
             "https://www.reddit.com/r/" + 
