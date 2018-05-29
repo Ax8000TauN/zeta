@@ -57,7 +57,7 @@ function search(query){
             break;
     	
     	case "-g":
-            query=qurey.substr(3);
+            query=query.substr(3);
             window.location = 
             "https://terraria.gamepedia.com/index.php?search=" + 
             query.replaceChars("", "+");
