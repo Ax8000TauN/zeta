@@ -9,6 +9,7 @@
 <body>
 	<div class="content">
 		<div class="welcome">
+			<div id="info"></div>
 			<div class="shinji"><img src="shinji.png"></div>
 			<div id="message"></div>
 			<div id="date"></div>
@@ -62,23 +63,46 @@
 				</li>
 		</ul>
 	</div>
+
 	<div class="bar">
-		<div class="prompt">$</div>
-		<input id="searchbox" name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100" placeholder="search -l -w -y -t"
+		<div id="prompt">$</div>
+		<input id="searchbox" name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100" placeholder="search ddg"
 		    size="17" autofocus="autofocus" />
+		<div id="help">?</div>
+		<div id="helpbox">
+			<h1>custom searches & syntax</h1><br>
+			-l: visit entered link<br>
+			-w: wikipedia<br>
+			-t: torrents<br>
+			-g: terraria wiki<br>
+			-y: youtube<br>
+			-r: reddit<br>
+			-R: subreddit<br>
+			nothing: duckduckgo<br>
+		</div>
 	</div>
 	<script src="search.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 	      	function updateDate() {
 		      	var m = new Date(); 
-		      	var n = "en-us"
+		      	var n = "en-gb"
 		      	var date = ("0" + m.getDate()).slice(-2) + " " + m.toLocaleString(n, {month: "long"});
 		        document.getElementById('date').innerHTML = date;
 	    	}
 	       updateDate();
 		});
-	        </script>
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+	      	function time() {
+		      	var time= new Date().toLocaleTimeString('en-GB', { hour: "numeric", 
+                                             minute: "numeric"});
+		        document.getElementById('info').innerHTML = time;
+	    	}
+	       time();
+		});
+	</script>
 	<!--<div class="eva"><img src="01.png"></div>-->
 </body>
 </html>
