@@ -31,27 +31,27 @@ function search(query){
         case "-t":
             query=query.substr(3);
             window.location = 
-	    "https://torrents.me/s/" + 
-	    query.replaceChars("", "+");
-	    break;
+	    	"https://torrents.me/s/" + 
+	    	query.replaceChars("", "+");
+	    	break;
 
     	case "-l":
-                query=query.substr(3);
-                window.location = 
+	    	query=query.substr(3);
+			window.location = 
     	    "https://" + 
     	    query.replaceChars("", "+");
     	    break;
 
-        case "-r":
-                query=query.substr(3);
-                window.location = 
+        case "-sr":
+			query=query.substr(3);
+			window.location = 
             "https://www.reddit.com/search?q=" + 
             query.replaceChars("", "+");
             break;
 
         case "-R":
-                query=query.substr(3);
-                window.location = 
+			query=query.substr(3);
+			window.location = 
             "https://www.reddit.com/r/" + 
             query.replaceChars("", "+");
             break;
