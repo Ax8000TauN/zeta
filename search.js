@@ -38,7 +38,7 @@ function search(query){
     	case "-l":
 			query=query.substr(3);
 			window.location = 
-    	    "https://" + 
+    	    "https://www." + 
     	    query.replaceChars("", "+");
     	    break;
 
