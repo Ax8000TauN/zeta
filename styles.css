@@ -1,3 +1,18 @@
+@font-face {
+    font-family: SF Pro Text;
+    src: url(sf-pro-text-regular.ttf);
+}
+
+@font-face {
+    font-family: SF Pro Display;
+    src: url(sf-pro-display-regular.ttf);
+}
+
+@font-face {
+    font-family: Font Awesome 5 Free Solid;
+    src: url(font-awesome-5-free-solid-900.otf);
+}
+
 body {
     background-color: #121c21;
 	color: #aaafb2;
