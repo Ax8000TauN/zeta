@@ -42,10 +42,17 @@ function search(query){
     	    query.replaceChars("", "+");
     	    break;
 
-        case "-s":
+        case "-d":
 			query=query.substr(3);
 			window.location = 
-            "https://www.reddit.com/search?q=" + 
+            "http://www.dictionary.com/browse/" + 
+            query.replaceChars("", "+");
+            break;
+			
+		case "-s":
+			query=query.substr(3);
+			window.location = 
+            "http://www.thesaurus.com/browse/" + 
             query.replaceChars("", "+");
             break;
 
@@ -55,14 +62,7 @@ function search(query){
             "https://www.reddit.com/r/" + 
             query.replaceChars("", "+");
             break;
-    	
-    	case "-g":
-            query=query.substr(3);
-            window.location = 
-            "https://terraria.gamepedia.com/index.php?search=" + 
-            query.replaceChars("", "+");
-            break;
-
+			
         default:
             window.location="https://duckduckgo.com/?q=" +
                 query.replaceChars("", "+");
