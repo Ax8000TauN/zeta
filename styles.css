@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: "SF Pro Text";
     src: url("SF-Pro-Text-Regular.ttf");
 }
@@ -11,7 +11,7 @@
 @font-face {
     font-family: "Font Awesome 5 Free Solid";
     src: url("Font-Awesome-5-Free-Solid-900.otf");
-}
+}*/
 
 body {
     background-color: #121c21;
