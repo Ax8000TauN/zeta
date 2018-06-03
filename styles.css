@@ -1,22 +1,22 @@
 @font-face {
-    font-family: SF Pro Text;
-    src: url(sf-pro-text-regular.ttf);
+    font-family: "SF Pro Text";
+    src: url("SF-Pro-Text-Regular.ttf");
 }
 
 @font-face {
-    font-family: SF Pro Display;
-    src: url(sf-pro-display-regular.ttf);
+    font-family: "SF Pro Display";
+    src: url("SF-Pro-Display-Regular.ttf");
 }
 
 @font-face {
-    font-family: Font Awesome 5 Free Solid;
-    src: url(font-awesome-5-free-solid-900.otf);
+    font-family: "Font Awesome 5 Free Solid";
+    src: url("Font-Awesome-5-Free-Solid-900.otf");
 }
 
 body {
     background-color: #121c21;
 	color: #aaafb2;
-	font-family: "SF Pro Text";
+	font-family: "SF Pro Text", "Arial", sans-serif;
 	font-size: 11px;
 	font-weight: bold;
     text-align: center;
@@ -27,14 +27,21 @@ a {
 }
 
 .content {
+    /*display: -moz-box;
+    -moz-box-orient: vertical;*/
+    margin: auto;
     margin-top: 20%;
-    display: -moz-box;
-    -moz-box-orient: vertical;
+    position: relative;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;*/
+    width: 330px;
 }
 
 .welcome {
     border: 0px solid red;
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display", "Arial", sans-serif;
     font-size: 23px;
     text-align: right;
     padding: 10px 0px 10px 0px;
