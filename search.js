@@ -61,14 +61,22 @@ function search(query){
 			window.location = 
             "https://www.reddit.com/r/" + 
             query.replaceChars("", "+");
+            break
+			
+		case "-m":
+			query=query.substr(3);
+			window.location = 
+            "https://forum.mobilism.org/search.php?keywords=" + 
+            query.replaceChars("", "+") + "&sr=topics&sf=titleonly";
             break;
+		   
 			
         default:
             window.location="https://duckduckgo.com/?q=" +
-                query.replaceChars("", "+");
+            query.replaceChars("", "+");
     }
 }
- 
+
 window.onload = function(){
     // search
     searchinput = document.getElementById("searchbox");
